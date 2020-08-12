@@ -3691,7 +3691,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .contacts__city {
+  margin-right: 6px;
   margin-bottom: 4.5%;
+
+  cursor: pointer;
 }
 
 .contacts__adds-inner {
@@ -5416,6 +5419,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
             transform: translateY(-5px) rotate(180deg);
   }
 
+  .contacts__address-container {
+    width: 44.3%;
+  }
+
   .contacts__item {
     height: 260px;
   }
@@ -5446,6 +5453,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .contacts__button::after {
     border: 15px solid transparent;
     border-right: 15px solid #0F0F11;
+  }
+
+  .contacts__city {
+    margin-right: 3px;
+  }
+
+  .contacts__wrapper {
+    width: 55.6%;
+  }
+
+  .contacts__yet {
+    font-size: 12px;
   }
 
   .range__container {

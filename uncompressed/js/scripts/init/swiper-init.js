@@ -3,6 +3,12 @@ function initSwiper(slider, thumbs) {
     return;
   }
 
+  let sliderButtonPrev = document.querySelector('.contacts__button--prev');
+  let sliderButtonNext = document.querySelector('.contacts__button--next');
+  let addressList =  document.querySelectorAll('.contacts__address');
+  let sliderList =  document.querySelectorAll('.contacts__item--main');
+  let thumbsItem = document.querySelectorAll('.contacts__item--thumbs');
+
   let thumbSlider = new Swiper(`.${thumbs.container}`, {
     pagination: {
       el: `.${thumbs.blockClass}__pagination`,
@@ -77,6 +83,9 @@ function initSwiper(slider, thumbs) {
       thumbsContainerClass: `${thumbs.container}-container`,
     },
     speed: 1000,
+    autoplay: {
+      delay: 5000
+    },
     loop: slider.loop,
     freeMode: slider.freeMode,
     watchSlidesVisibility: slider.watchSlidesVisibility,
@@ -105,6 +114,30 @@ function initSwiper(slider, thumbs) {
     clickableClass: `${slider.blockClass}__clickable`,
     lockClass: `${slider.blockClass}__lock`,
     progressbarOppositeClass: `${slider.blockClass}__progressbar-opposite`,
+  });
+
+  function sliderToggle() {
+    sliderList.forEach((slider, index) => {
+      if(sliderList[index].classList.contains('contacts__item--active')) {
+        addressList.forEach(address => {
+          address.classList.remove('contacts__address--active');
+        });
+
+        addressList[index].classList.add('contacts__address--active');
+      }
+    })
+  }
+
+  sliderButtonNext.onclick = () => sliderToggle();
+
+  sliderButtonPrev.onclick = () => sliderToggle(true);
+
+  thumbsItem.forEach(button => button.onclick = () => sliderToggle(false, true));
+
+  mySwiper.on('slideChange', function () {
+    setTimeout(() => {
+      sliderToggle()
+    }, 0);
   });
 }
 
