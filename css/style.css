@@ -3691,10 +3691,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .contacts__city {
-  margin-right: 6px;
-}
-
-.contacts__city {
   margin-bottom: 4.5%;
 }
 
@@ -4751,6 +4747,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .news__slide-description {
     margin-bottom: 5px;
+  }
+
+  .anchors {
+    left: 17px;
   }
 }
 
