@@ -29,9 +29,27 @@ function contactsToggle() {
         });
 
         if(!prev && !thumb) {
-          addressList[index + 1].classList.add('contacts__address--active');
+          try {
+            // if(index > 2 && index < 8) {
+            //   let count = 7 - index;
+            //
+            //   console.log(count);
+            // }
+
+            addressList[index + 1].classList.add('contacts__address--active');
+          } catch {
+            return;
+          }
         } else if(prev && !thumb) {
           try {
+            // console.log(index);
+
+            // if(index > 2 && index < 9) {
+            //   let count = 7 - index;
+            //
+            //   console.log(count);
+            // }
+
             addressList[index - 1].classList.add('contacts__address--active');
           } catch {
             return;
@@ -46,9 +64,7 @@ function contactsToggle() {
   sliderButtonNext.onclick = () => sliderToggle();
   sliderButtonPrev.onclick = () => sliderToggle(true);
 
-  thumbsItem.forEach(button => {
-    button.onclick = () => sliderToggle(false, true);
-  })
+  thumbsItem.forEach(button => button.onclick = () => sliderToggle(false, true));
 }
 
 contactsToggle();

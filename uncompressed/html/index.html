@@ -26,12 +26,12 @@
 </div>
 
 
-  <section class="anchors">
+  <section data-aos="fade-right" class="anchors">
   <h2 class="visually-hidden">Навигация</h2>
 
   <ul class="anchors__list">
     <li class="anchors__item">
-      <a href="#promo" class="anchors__link anchors__link--promo scroll">
+      <a href="#promo" class="anchors__link scroll">
         <span class="visually-hidden">Перейти в промо секцию</span>
         <svg class="anchors__icon" width="20" height="20">
           <use xlink:href="#icon-grey"></use>
@@ -39,7 +39,7 @@
       </a>
     </li>
     <li class="anchors__item">
-      <a href="#services" class="anchors__link anchors__link--services scroll">
+      <a href="#services" class="anchors__link scroll">
         <span class="visually-hidden">Перейти перейти к списку услуг</span>
          <svg class="anchors__icon" width="20" height="20">
           <use xlink:href="#icon-grey"></use>
@@ -47,7 +47,7 @@
       </a>
     </li>
     <li class="anchors__item">
-      <a href="#ref" class="anchors__link anchors__link--ref scroll">
+      <a href="#ref" class="anchors__link scroll">
         <span class="visually-hidden">Перейти перейти к "Будь уверенным в качестве"</span>
          <svg class="anchors__icon" width="20" height="20">
           <use xlink:href="#icon-grey"></use>
@@ -55,7 +55,7 @@
       </a>
     </li>
     <li class="anchors__item">
-      <a href="#contacts" class="anchors__link anchors__link--contacts scroll">
+      <a href="#contacts" class="anchors__link scroll">
         <span class="visually-hidden">Перейти перейти к контактам</span>
          <svg class="anchors__icon" width="20" height="20">
           <use xlink:href="#icon-grey"></use>
@@ -63,7 +63,7 @@
       </a>
     </li>
     <li class="anchors__item">
-      <a href="#range" class="anchors__link anchors__link--range scroll">
+      <a href="#range" class="anchors__link scroll">
         <span class="visually-hidden">Перейти перейти к ассортиментам</span>
          <svg class="anchors__icon" width="20" height="20">
           <use xlink:href="#icon-grey"></use>
@@ -71,7 +71,7 @@
       </a>
     </li>
     <li class="anchors__item">
-      <a href="#benefits" class="anchors__link anchors__link--benefits scroll">
+      <a href="#benefits" class="anchors__link scroll">
         <span class="visually-hidden">Перейти перейти к преимуществам</span>
          <svg class="anchors__icon" width="20" height="20">
           <use xlink:href="#icon-grey"></use>
@@ -79,7 +79,7 @@
       </a>
     </li>
     <li class="anchors__item">
-      <a href="#news" class="anchors__link anchors__link--news scroll">
+      <a href="#news" class="anchors__link scroll">
         <span class="visually-hidden">Перейти перейти к новостям</span>
          <svg class="anchors__icon" width="20" height="20">
           <use xlink:href="#icon-grey"></use>
@@ -148,8 +148,9 @@
   <main class="main">
 
     <ul class="main__list">
+
       <li class="main__item">
-        <section id="promo" class="main__promo promo anchor">
+        <section id="promo" class="main__promo promo">
   <div data-aos="fade" class="container promo__container">
     <h1 class="promo__title">Позаботься о безопасном путешествии</h1>
   </div>
@@ -208,7 +209,7 @@
       </li>
 
       <li class="main__item">
-        <section id="services" class="main__services services anchor">
+        <section id="services" class="main__services services">
   <h2 class="visually-hidden">Список услуг</h2>
 
   <div class="services__container">
@@ -263,7 +264,7 @@
       </li>
 
       <li class="main__item">
-        <article id="ref" class="main__ref ref anchor">
+        <article id="ref" class="main__ref ref">
   <div class="container ref__container">
     <h2 class="ref__title">Будь уверенным в качестве</h2>
     <a href="#" class="button ref__button">
@@ -279,13 +280,15 @@
       </li>
 
       <li class="main__item">
-        <section id="contacts" data-aos="fade" class="main__contacts contacts anchor">
+        <section id="contacts" data-aos="fade" class="main__contacts contacts">
   <h2 class="title contacts__title">Контакты</h2>
   <div data-aos="fade-right" class="contacts__address-container">
     <div class="contacts__address contacts__address--active">
       <div class="contacts__box">
-        <p class="contacts__city">Винница</p>
-        <p class="contacts__street">ул. Маяковского 21,</p>
+        <a href="#" class="contacts__city">
+          Винница
+          <span class="contacts__street">ул. Маяковского 21,</span>
+        </a>
         <a href="tel:380432605335" class="contacts__tel">+38(0432) 60-53-35,</a>
         <button type="button" class="contacts__button-toggle">
           <span class="visually-hidden">Подробнее:</span>
@@ -301,8 +304,10 @@
     </div>
     <div class="contacts__address">
       <div class="contacts__box">
-        <p class="contacts__city">Днипро</p>
-        <p class="contacts__street">ул. Сичеславcкая набережная 8,</p>
+        <a href="#" class="contacts__city">
+          Днипро,
+          <span class="contacts__street">ул. Сичеславcкая набережная 8,</span>
+        </a>
         <a href="tel:3800563745638" class="contacts__tel">+38(056) 374-56-38, ...</a>
         <button type="button" class="contacts__button-toggle">
           <span class="visually-hidden">Подробнее:</span>
@@ -318,8 +323,10 @@
     </div>
     <div class="contacts__address">
       <div class="contacts__box">
-        <p class="contacts__city">Киев</p>
-        <p class="contacts__street">ул. Автопарковая 7,</p>
+        <a href="#" class="contacts__city">
+          Киев,
+          <span class="contacts__street">ул. Автопарковая 7,</span>
+        </a>
         <a href="tel:380444920421" class="contacts__tel">+38(044) 492-04-21, ...</a>
         <button type="button" class="contacts__button-toggle">
           <span class="visually-hidden">Подробнее:</span>
@@ -335,8 +342,10 @@
     </div>
     <div class="contacts__address">
       <div class="contacts__box">
-        <p class="contacts__city">Киев</p>
-        <p class="contacts__street">пр-кт. Победы 121Д,</p>
+        <a href="#" class="contacts__city">
+          Киев,
+          <span class="contacts__street">пр-кт. Победы 121Д,</span>
+        </a>
         <a href="tel:380444687047" class="contacts__tel">+38(044) 468-70-47, ...</a>
         <button type="button" class="contacts__button-toggle">
           <span class="visually-hidden">Подробнее:</span>
@@ -352,8 +361,10 @@
     </div>
     <div class="contacts__address">
       <div class="contacts__box">
-        <p class="contacts__city">Львов</p>
-        <p class="contacts__street">ул. Промышленная 50А,</p>
+        <a href="#" class="contacts__city">
+          Львов,
+          <span class="contacts__street">ул. Промышленная 50А,</span>
+        </a>
         <a href="tel:380322422452" class="contacts__tel">+38(032) 242-24-52, ...</a>
         <button type="button" class="contacts__button-toggle">
           <span class="visually-hidden">Подробнее:</span>
@@ -369,8 +380,10 @@
     </div>
     <div class="contacts__address">
       <div class="contacts__box">
-        <p class="contacts__city">Одесса</p>
-        <p class="contacts__street">ул. Столбовая 28,</p>
+        <a href="#" class="contacts__city">
+          Одесса,
+          <span class="contacts__street">ул. Столбовая 28,</span>
+        </a>
         <a href="tel:380487378233" class="contacts__tel">+38(048) 737-82-33, ...</a>
         <button type="button" class="contacts__button-toggle">
           <span class="visually-hidden">Подробнее:</span>
@@ -386,8 +399,10 @@
     </div>
     <div class="contacts__address">
       <div class="contacts__box">
-        <p class="contacts__city">Полтава</p>
-        <p class="contacts__street">ул. Европейская 146Д,</p>
+        <a href="#" class="contacts__city">
+          Полтава,
+          <span class="contacts__street">ул. Европейская 146Д,</span>
+        </a>
         <a href="tel:380532626364" class="contacts__tel">+38(0532) 62-63-64, ...</a>
         <button type="button" class="contacts__button-toggle">
           <span class="visually-hidden">Подробнее:</span>
@@ -403,8 +418,10 @@
     </div>
     <div class="contacts__address">
       <div class="contacts__box">
-        <p class="contacts__city">Харьков</p>
-        <p class="contacts__street">Мерефянское ш. 9а,</p>
+        <a href="#" class="contacts__city">
+          Харьков,
+          <span class="contacts__street">Мерефянское ш. 9a,</span>
+        </a>
         <a href="tel:380577601881" class="contacts__tel">+38(057) 760-18-81, ...</a>
         <button type="button" class="contacts__button-toggle">
           <span class="visually-hidden">Подробнее:</span>
@@ -420,8 +437,10 @@
     </div>
     <div class="contacts__address">
       <div class="contacts__box">
-        <p class="contacts__city">Черкассы</p>
-        <p class="contacts__street">ул. 30 лет Победы 70,</p>
+        <a href="#" class="contacts__city">
+          Черкассы,
+          <span class="contacts__street">ул. 30 лет Победы 70,</span>
+        </a>
         <a href="tel:380472599870" class="contacts__tel">+38(0472) 59-98-70, ...</a>
         <button type="button" class="contacts__button-toggle">
           <span class="visually-hidden">Подробнее:</span>
@@ -526,7 +545,7 @@
       </li>
 
       <li class="main__item">
-        <section id="range" class="main__range range anchor">
+        <section id="range" class="main__range range">
   <div class="range__container">
     <h2 data-aos="fade" class="title range__title">Ассортимент</h2>
     <ul class="range__list">
@@ -574,7 +593,7 @@
       </li>
 
       <li class="main__item">
-        <section id="benefits" class="main__benefits benefits anchor">
+        <section id="benefits" class="main__benefits benefits">
   <div class="benefits__container">
     <ul class="benefits__list">
       <li data-aos="fade-right" class="benefits__item">
@@ -608,7 +627,7 @@
       </li>
 
       <li class="main__item">
-        <section id="news" class="main__news news anchor">
+        <section id="news" class="main__news news">
   <div class="news__container">
     <div data-aos="fade" class="news__wrapper">
       <h2 class="subtitle news__title">Новости и акции</h2>
@@ -644,7 +663,7 @@
         </li>
       </ul>
       <!-- Add Pagination -->
-      <p class="news__pagination"></p>
+      <p data-aos="fade" class="news__pagination"></p>
       <!-- Add Arrows -->
       <div data-aos="fade" class="news__buttons">
         <button class="news__button news__button--prev">
@@ -660,22 +679,8 @@
 </section>
 
       </li>
+
     </ul>
-
-<!--    <include src="src/html/blocks/_promo.html"></include>-->
-
-<!--    <include src="src/html/blocks/_services.html"></include>-->
-
-<!--    <include src="src/html/blocks/_ref.html"></include>-->
-
-<!--    <include src="src/html/blocks/_contacts.html"></include>-->
-
-<!--    <include src="src/html/blocks/_range.html"></include>-->
-
-<!--    <include src="src/html/blocks/_benefits.html"></include>-->
-
-<!--    <include src="src/html/blocks/_news.html"></include>-->
-
   </main>
 
   <footer class="footer">
