@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <title>Main</title>
+  <title>Главная</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="UTF-8">
@@ -18,6 +18,7 @@
 <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
 <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
 <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+<link rel="preload" href="fonts/Montserrat-SemiBoldItalic.woff2" as="font">
 
 </head>
 <body class="main-body">
@@ -145,14 +146,17 @@
 </header>
 
 
-  <main class="main">
+  <main class="main main--index">
 
     <ul class="main__list">
 
-      <li class="main__item">
+      <li class="main__item main__item--moving">
         <section id="promo" class="main__promo promo">
   <div data-aos="fade" class="container promo__container">
-    <h1 class="promo__title">Позаботься о безопасном путешествии</h1>
+    <h1 class="promo__title">
+      <span class="promo__motion-title">Будь в движении</span>
+      <span class="promo__motion">Be in motion</span>
+    </h1>
   </div>
   <div data-aos="fade-right" data-aos-delay="500" class="promo__gear">
     <div class="promo__gear-container">
@@ -206,6 +210,10 @@
   
 </section>
 
+
+        <a href="#services" class="moving moving--down scroll" role="button">
+          <span class="visually-hidden">Вниз</span>
+        </a>
       </li>
 
       <li class="main__item">
@@ -253,9 +261,10 @@
     </ul>
 
     <div data-aos="fade-left" class="services__button-box">
-      <a href="#promo" class="services__button scroll" role="button">
-        <span class="visually-hidden">Вверх</span>
-      </a>
+      <a href="#promo" class="scroll-button scroll-button--services scroll" role="button">
+  <span class="visually-hidden">Вверх</span>
+</a>
+
     </div>
   </div>
 
@@ -627,7 +636,7 @@
       </li>
 
       <li class="main__item">
-        <section id="news" class="main__news news">
+        <article id="news" class="main__news news">
   <div class="news__container">
     <div data-aos="fade" class="news__wrapper">
       <h2 class="subtitle news__title">Новости и акции</h2>
@@ -663,24 +672,33 @@
         </li>
       </ul>
       <!-- Add Pagination -->
-      <p data-aos="fade" class="news__pagination"></p>
+<p data-aos="fade" class="slider-bullets"></p>
+
       <!-- Add Arrows -->
-      <div data-aos="fade" class="news__buttons">
-        <button class="news__button news__button--prev">
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <button class="news__button news__button--next">
-          <span class="visually-hidden">Вперед</span>
-        </button>
-      </div>
+<div data-aos="fade" class="slider-buttons slider-buttons--news">
+  <button class="slider-buttons__button slider-buttons__button--prev">
+    <span class="visually-hidden">Назад</span>
+  </button>
+  <button class="slider-buttons__button slider-buttons__button--next">
+    <span class="visually-hidden">Вперед</span>
+  </button>
+</div>
+
     </div>
   </div>
 
-</section>
+</article>
 
       </li>
 
     </ul>
+
+    <div class="moving-box">
+      <a href="#promo" class="moving moving--up scroll" role="button">
+        <span class="visually-hidden">Вниз</span>
+      </a>
+    </div>
+
   </main>
 
   <footer class="footer">
