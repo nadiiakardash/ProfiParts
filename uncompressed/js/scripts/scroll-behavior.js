@@ -1,4 +1,17 @@
 const anchors = document.querySelectorAll('.scroll');
+const contactsNav = document.querySelector('.contacts-nav');
+let isResizeble = true;
+
+setTimeout(() => {
+  if(isResizeble && contactsNav && window.pageYOffset > 100) {
+    window.addEventListener('scroll', () => contactsNav.classList.add('contacts-nav--fixed'));
+
+    isResizeble = false;
+  } else if(window.pageYOffset < 100) {
+    contactsNav.classList.add('contacts-nav--fixed');
+  }
+
+}, 500)
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
@@ -8,19 +21,21 @@ for (let anchor of anchors) {
 
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
+      block: 'center'
     })
   })
 }
 
-let scrolltop = pageYOffset;
-const toggleClass = document.querySelector(".header");
+const toggleClass = document.querySelector('.header');
 
-window.addEventListener("scroll", function () {
-  if (pageYOffset > scrolltop) {
-    toggleClass.classList.add("header--fixed");
-  } else {
-    toggleClass.classList.remove("header--fixed");
-  }
-  scrolltop = pageYOffset;
-});
+setTimeout(() => {
+  window.addEventListener('scroll',  () => {
+    if (window.pageYOffset > toggleClass.getBoundingClientRect().bottom - 75) {
+      // document.querySelector('.contacts-nav').classList.add('contacts-nav--fixed');
+      toggleClass.classList.add('header--fixed');
+    } else {
+      toggleClass.classList.remove('header--fixed');
+    }
+  });
+},1000);
+
