@@ -3113,7 +3113,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .main--news {
-  margin-bottom: 3%;
+  padding-bottom: 3%;
 }
 
 .main--article {
@@ -4578,7 +4578,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin-bottom: 4.3%;
 
   line-height: 28px;
-  color: #939393;
+  color: #0F0F11;
   text-indent: 0;
 
   list-style: none;
@@ -5471,7 +5471,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin-bottom: 1%;
   margin-left: auto;
 
-  color: #949494;
+  color: #0F0F11;
   text-indent: 0;
 
   list-style: none;
