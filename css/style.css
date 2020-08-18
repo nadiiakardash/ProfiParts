@@ -3026,7 +3026,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .header__main-link {
-  padding-left: 16%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__main-link:active .header__icon--phone {
@@ -4205,7 +4207,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .contacts__button-link {
-  padding-left: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contacts__button-link::after {
@@ -5421,8 +5425,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   bottom: 9%;
   z-index: 10;
 
+  display: block;
+
   padding-right: 3%;
   padding-left: 3%;
+
+  text-align: center;
 }
 
 .main-contacts__map-link::after {
@@ -5898,10 +5906,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .header {
     font-size: 12px;
-  }
-
-  .header__main-link {
-    padding-left: 30px;
   }
 
   .footer {
@@ -7313,10 +7317,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
   }
 
-  .header__main-link {
-    padding-left: 45px;
-  }
-
   .header__item,
   .header__inner {
     text-align: left;
@@ -7511,10 +7511,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .contacts__button-box {
     margin-bottom: 20px;
-  }
-
-  .contacts__button-link {
-    padding-left: 80px;
   }
 
   .contacts__yet {
