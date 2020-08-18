@@ -7338,7 +7338,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .main--index,
-  .main--assortment {
+  .main--assortment,
+  .main--article,
+  .main--news {
     padding-bottom: 50px;
   }
 
