@@ -7930,6 +7930,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .header {
     min-height: auto;
     padding-bottom: 10px;
+
+    opacity: 1;
   }
 
   .header--active .header__nav {
@@ -7969,7 +7971,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .header__button-box {
-    margin-left: auto;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+
+    margin-right: auto;
   }
 
   .header__container {
@@ -8079,6 +8085,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .main-title {
     padding-top: 36.5%;
+  }
+
+  .main__item--moving {
+    display: none;
+  }
+
+  .main__item--services {
+    padding-top: 90px;
   }
 
   .promo {
