@@ -2877,6 +2877,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   opacity: 1;
 }
 
+.header--active {
+  position: static;
+
+  opacity: 1;
+}
+
 .no-fixed .header {
   position: relative;
 
@@ -5710,7 +5716,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .contacts-nav {
-  top: 90px;
+  top: 0;
   z-index: 99;
 
   display: -webkit-box;
