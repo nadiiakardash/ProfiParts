@@ -36,8 +36,6 @@ setTimeout(() => {
   window.addEventListener('scroll',  () => {
     if (window.pageYOffset > toggleClass.getBoundingClientRect().bottom - 75) {
       toggleClass.classList.add('header--fixed');
-    } else {
-      toggleClass.classList.remove('header--fixed');
     }
   });
 },1000);
